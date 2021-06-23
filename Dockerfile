@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:8-jdk-alpine
 EXPOSE 8080
 ADD target/spring-petclinic-2.3.1.BUILD-SNAPSHOT.jar spring-petclinic-2.3.1.BUILD-SNAPSHOT.jar
 ENTRYPOINT["java", "-jar", "/spring-petclinic-2.3.1.BUILD-SNAPSHOT.jar"]
